@@ -1,6 +1,6 @@
 DESCRIPTION
 ------------
-Chat server with one only channel. Allows private messages.
+Chat server with only one channel. Allows private messages.
 
 
 COMPILE
