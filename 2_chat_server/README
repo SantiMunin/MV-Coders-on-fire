@@ -1,0 +1,12 @@
+DESCRIPTION
+------------
+Chat server with one only channel. Allows private messages.
+
+
+COMPILE
+------------
+ant build
+
+EJECUTE
+------------
+ant run
