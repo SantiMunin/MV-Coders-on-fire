@@ -60,11 +60,16 @@ public class DataStore {
 	 * @return
 	 */
 	public boolean changeNick(String nick, String newNick) {
-		if (nick.contains(nick)) {
-			ClientHandler cH = this.nickList.get(nick);
-			this.nickList.remove(nick);
-			this.nickList.put(newNick, cH);
-			return true;
+		if (nickList.contains(nick)) {
+			if (!nickList.contains(newNick)) {
+				ClientHandler cH = this.nickList.get(nick);
+				this.nickList.remove(nick);
+				this.nickList.put(newNick, cH);
+				return true;
+			}
+			else {
+				return false;
+			}
 		} else {
 			return false;
 		}
